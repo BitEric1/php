@@ -13,7 +13,7 @@
         echo "Kết nối thành công!";
     } catch (PDOException $e) {
         echo "Kết nối thất bại: " . $e->getMessage() . "Vui lòng thử lại";
-    }   
+    }
 ?>
 
 <!DOCTYPE html>
@@ -116,8 +116,6 @@
                 $data = htmlspecialchars($data);
                 return $data;
             }
-
-            
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $username = test_input($_POST["username"]);
                 // $email = $_POST["email"];
